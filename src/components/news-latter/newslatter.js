@@ -8,8 +8,7 @@ class NewsLatter extends React.PureComponent {
         value: "",
     };
 
-    handleInputChange = (e) => {
-        const value = e.target.value;
+    handleInputChange = (value) => {
         this.setState({value});
     }
 
@@ -25,7 +24,7 @@ class NewsLatter extends React.PureComponent {
         return(
             <div className="news-latter">
                 <div className="news-header">Newsletter</div>
-                <AnattaInput {...searchInputProps} value={this.state.value} placeHolder={this.state.placeHolder} handleInputChange={(e)=>this.handleInputChange(e)} />
+                <AnattaInput {...searchInputProps} value={this.state.value} placeHolder={this.state.placeHolder} handleInputChange={(value)=>this.handleInputChange(value)} />
                 <input type="submit" className="email-btn" value="Join Us" onClick={this.sendEmail} />
             </div>
         )

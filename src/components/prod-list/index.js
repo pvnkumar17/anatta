@@ -18,17 +18,23 @@ class ProdList extends React.Component {
     }
 
     render() {
-        console.log(this.state.imageUrl);
+        const {
+            name,
+            price
+        } = this.props;
+        console.log(name);
         return (
             <div className="recom-img">
-                {this.state.imageUrl && <img src={this.state.imageUrl} alt="prod-img" />}
+                {this.state.imageUrl && <div><img src={this.state.imageUrl} alt="prod-img" /><span>{name}</span><span>${price}</span></div> }
             </div>
         );
     }
 }
 
 ProdList.propTypes = {
-    id: PropTypes.number
+    id: PropTypes.number,
+    name: PropTypes.string,
+    price: PropTypes.number
 }
 
 function mapStateToProps(){

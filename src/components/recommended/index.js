@@ -20,7 +20,6 @@ class Recommended extends React.Component {
     }
 
     render() {
-        console.log(this.state.products);
         return(
             <div className="recommended">
 
@@ -29,13 +28,13 @@ class Recommended extends React.Component {
                     <div className="desktop-only">
                         <Carousel  showThumbs={false} showIndicators={false} centerMode centerSlidePercentage={25}>
                             {this.state.products.map((product, index) => 
-                            <ProdList key={index} id={product.id} />
+                            <ProdList name={product.name} price={product.price} key={index} id={product.id} />
                             )}
                         </Carousel>
                     </div>
                     <ul className="mobile-only">
                         {this.state.products.map((product, index) => 
-                            {if(index< 4) return <li><ProdList key={index} id={product.id}/></li>}
+                            {if(index< 4) return <li key={index}><ProdList name={product.name} price={product.price} id={product.id}/></li>}
                         )}  
                     </ul>
                 </div>

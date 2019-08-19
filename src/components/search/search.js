@@ -9,8 +9,7 @@ class Search extends React.PureComponent {
         value: "",
     };
 
-    handleInputChange = (e) => {
-        const value = e.target.value;
+    handleInputChange = (value) => {
         this.setState({value});
     }
 
@@ -25,7 +24,7 @@ class Search extends React.PureComponent {
         }
         return(
             <div className="search">
-                <AnattaInput {...searchInputProps} value={this.state.value} placeHolder={this.state.placeHolder} handleInputChange={(e)=>this.handleInputChange(e)} />
+                <AnattaInput {...searchInputProps} value={this.state.value} placeHolder={this.state.placeHolder} handleInputChange={(value)=>this.handleInputChange(value)} />
                 <input type="image" className="search-btn" src={SearchBtn} value="search" alt="search" onClick={this.handleSearch} />
             </div>
         )

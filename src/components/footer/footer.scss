@@ -45,5 +45,8 @@
     width: 35%;
     .footer-nav-col {
         float: right;
+        &:last-child {
+           float: left; 
+        }
     }
 }

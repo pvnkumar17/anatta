@@ -22,3 +22,10 @@ There are few things to do to run this project for development purpose, please c
 - GET - `https://anatta-demo-app.herokuapp.com/api/products/` - gets all the products
 - GET - `https://anatta-demo-app.herokuapp.com/api/products/{id}` - gets the details specific product whose id is equal to given id
 - DELETE - `https://anatta-demo-app.herokuapp.com/api/products/{id}/image` - gets images of the product
+
+#for compilng scss
+
+- You can run `num run build-css`
+
+# for production build
+- You can run `npm run build`

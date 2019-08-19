@@ -1,0 +1,35 @@
+.feature-strip {
+    margin-top: 70px;
+    background: #f1f1f1;
+    padding: 20px 0;
+    ul {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        li {
+            width: 33.3%;
+            display: inline-block;
+            text-align: center;
+            padding: 8px 0;
+            color: #4a4a4a;
+            font-size: 14px;
+            span {
+                display: inline-block;
+                width: 25px;
+                height: 17px;
+                vertical-align: bottom;
+                &.return {
+                    background: url(../../assets/img/icon-return.svg) center top no-repeat;
+                }
+                &.shipping {
+                    background: url(../../assets/img/icon-shipping.svg) center top no-repeat;
+                }
+            }
+            &:nth-child(2) {
+                border-right: 1px solid #c8c8c8;
+                border-left: 1px solid #c8c8c8;
+            }
+        }
+    }
+}

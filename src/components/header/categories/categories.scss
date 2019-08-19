@@ -1,0 +1,15 @@
+.categories {
+    padding: 15px 0 0;
+    float: left;
+    div {
+        float: left;
+        font-size: 12px;
+        font-weight: 700;
+        margin-right: 42px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

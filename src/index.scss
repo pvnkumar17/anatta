@@ -11,10 +11,23 @@ body {
 .container-content {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 58px 10px 33px;
+    padding: 0;
     &:after{
         content: "";
         display: table;
         clear: both;
+    }
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .desktop-only {
+        display: block;
+    }
+    .container-content {
+        padding: 58px 10px 33px;
     }
 }

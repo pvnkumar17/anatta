@@ -23,15 +23,15 @@ class PDP extends React.Component {
     render() {
         return (
             <div className="product-detail">
+                <div className="col-right">
+                    <Carousel showIndicators={false} >
+                        {this.state.products && this.state.products.map((product, index) => <div className="container-img" key={index}><img src={product.url} /></div>)}
+                    </Carousel>
+                </div>
                 <div className="col-left">
                     <PdpDescription id={8} />
                 </div>
 
-                <div className="col-right">
-                    <Carousel>
-                        {this.state.products && this.state.products.map((product, index) => <div className="container-img" key={index}><img src={product.url} /></div>)}
-                    </Carousel>
-                </div>
             </div>
         );
     }

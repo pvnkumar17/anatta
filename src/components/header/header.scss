@@ -9,7 +9,20 @@
 }
 
 .hamburger {
-    display: none;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 14px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-top: 15px;
+    cursor: pointer;
+    span {
+        display: block;
+        margin: 4px 0;
+        border-bottom: 2px solid #000;
+
+    }
 }
 
 .right-align {
@@ -33,5 +46,11 @@
     }
     .about, .profile, .cart{
         float: left;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
     }
 }

@@ -47,7 +47,7 @@ class Footer extends PureComponent {
                                 <NewsLatter />
                                 <Social {...socialProps} />
                             </div>
-                            <div className="footer-nav-col">
+                            <div className="footer-nav-col desktop-only">
                                 <List {...storyProps} />
                                 <Search />
                             </div>

@@ -1,6 +1,7 @@
 .footer {
     background: #000;
     color: #fff;
+    letter-spacing: 1px;
     a {
         text-decoration: none;
         color: #fff;
@@ -10,10 +11,11 @@
 .container-footer {
     max-width: 1360px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .footer-content {
-    padding: 40px 0;
+    padding: 40px;
     border-bottom: 1px solid #fff;
     &:after{
         content:"";
@@ -23,11 +25,10 @@
 }
 
 .footer-left-col {
-    float: left;
-    width: 65%;
     .footer-nav-col {
         float: left;
-        width: 25%;
+        width: 50%;
+        margin-bottom: 30px;
     }
 }
 
@@ -35,18 +36,52 @@
     padding: 20px 0;
     clear: both;
     text-align: center;
+    font-size: 10px;
+    color: #808080;
     a {
         text-decoration: underline;
+        color: #808080;
     }
 }
 
 .footer-right-col {
-    float: right;
-    width: 35%;
     .footer-nav-col {
+        margin: 0 auto 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer-content {
+        padding: 54px 17px 54px 28px;
+    }
+    .footer-left-col {
+        .footer-nav-col {
+            width: 25%;
+            margin-bottom: 0;
+        }
+    }
+    .footer-right-col {
+        .footer-nav-col {
+            width: 50%;
+            float: right;
+            &:last-child {
+                float: left;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1023px) {
+    .footer-left-col {
+        float: left;
+        width: 57%;
+    }
+    .footer-right-col {
         float: right;
-        &:last-child {
-           float: left; 
+        width: 43%;
+        .footer-nav-col {
+            width: auto;
+            margin-bottom: 0;
         }
     }
 }

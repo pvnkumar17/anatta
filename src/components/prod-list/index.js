@@ -22,7 +22,6 @@ class ProdList extends React.Component {
             name,
             price
         } = this.props;
-        console.log(name);
         return (
             <div className="recom-img">
                 {this.state.imageUrl && <div><img src={this.state.imageUrl} alt="prod-img" /><span>{name}</span><span>${price}</span></div> }

@@ -8,6 +8,14 @@
     span {
         display: block;
         text-align: left;
-        line-height: 1.5;
+        line-height: 1.6;
+        color: #000;
+        padding-left: 12px;
+        &:nth-child(1) {            
+            padding-top: 5px;
+        }
+    }
+    li:nth-child(4n) &{
+        margin-right: 0;
     }
 }
